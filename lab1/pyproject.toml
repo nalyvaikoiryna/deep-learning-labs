@@ -1,0 +1,21 @@
+[project]
+name = "dl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Iryna Nalyvaiko", email = "nalyvaikoirynaolimpzl10@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.0",
+]
+
+[project.scripts]
+dl = "dl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
