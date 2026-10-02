@@ -303,8 +303,8 @@ fn = (
     .head(5)
 )
 
-print("Перші FP:")
+print("First FP:")
 print(fp.to_string(index=False))
 
-print("\nПерші FN:")
+print("\nFirst FN:")
 print(fn.to_string(index=False))
