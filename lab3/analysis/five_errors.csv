@@ -1,0 +1,6 @@
+file,true_class,pred_class,probability,frequency,index,true,pred
+20179.jpg,glacier,mountain,0.8570138812065125,72,713,2,3
+20454.jpg,street,buildings,0.7636390924453735,22,1486,5,0
+20246.jpg,buildings,street,0.9999383687973022,20,130,0,5
+20320.jpg,mountain,glacier,0.9320258498191833,19,783,3,2
+20383.jpg,glacier,sea,0.7886878848075867,9,524,2,4

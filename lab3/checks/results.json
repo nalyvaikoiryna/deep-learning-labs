@@ -1,0 +1,391 @@
+{
+  "split": [
+    {
+      "label": "buildings",
+      "part": "train",
+      "count": 200,
+      "file_sum": 1996761,
+      "expected_count": 200,
+      "expected_sum": 1996761,
+      "matches_expected": true
+    },
+    {
+      "label": "buildings",
+      "part": "validation",
+      "count": 218,
+      "file_sum": 4837323,
+      "expected_count": 218,
+      "expected_sum": 4837323,
+      "matches_expected": true
+    },
+    {
+      "label": "buildings",
+      "part": "test",
+      "count": 219,
+      "file_sum": 4837559,
+      "expected_count": 219,
+      "expected_sum": 4837559,
+      "matches_expected": true
+    },
+    {
+      "label": "forest",
+      "part": "train",
+      "count": 200,
+      "file_sum": 2032625,
+      "expected_count": 200,
+      "expected_sum": 2032625,
+      "matches_expected": true
+    },
+    {
+      "label": "forest",
+      "part": "validation",
+      "count": 237,
+      "file_sum": 5276962,
+      "expected_count": 237,
+      "expected_sum": 5276962,
+      "matches_expected": true
+    },
+    {
+      "label": "forest",
+      "part": "test",
+      "count": 237,
+      "file_sum": 5291326,
+      "expected_count": 237,
+      "expected_sum": 5291326,
+      "matches_expected": true
+    },
+    {
+      "label": "glacier",
+      "part": "train",
+      "count": 200,
+      "file_sum": 2183923,
+      "expected_count": 200,
+      "expected_sum": 2183923,
+      "matches_expected": true
+    },
+    {
+      "label": "glacier",
+      "part": "validation",
+      "count": 276,
+      "file_sum": 6135652,
+      "expected_count": 276,
+      "expected_sum": 6135652,
+      "matches_expected": true
+    },
+    {
+      "label": "glacier",
+      "part": "test",
+      "count": 277,
+      "file_sum": 6157250,
+      "expected_count": 277,
+      "expected_sum": 6157250,
+      "matches_expected": true
+    },
+    {
+      "label": "mountain",
+      "part": "train",
+      "count": 200,
+      "file_sum": 1950345,
+      "expected_count": 200,
+      "expected_sum": 1950345,
+      "matches_expected": true
+    },
+    {
+      "label": "mountain",
+      "part": "validation",
+      "count": 262,
+      "file_sum": 5789535,
+      "expected_count": 262,
+      "expected_sum": 5789535,
+      "matches_expected": true
+    },
+    {
+      "label": "mountain",
+      "part": "test",
+      "count": 263,
+      "file_sum": 5849765,
+      "expected_count": 263,
+      "expected_sum": 5849765,
+      "matches_expected": true
+    },
+    {
+      "label": "sea",
+      "part": "train",
+      "count": 200,
+      "file_sum": 1987613,
+      "expected_count": 200,
+      "expected_sum": 1987613,
+      "matches_expected": true
+    },
+    {
+      "label": "sea",
+      "part": "validation",
+      "count": 255,
+      "file_sum": 5655068,
+      "expected_count": 255,
+      "expected_sum": 5655068,
+      "matches_expected": true
+    },
+    {
+      "label": "sea",
+      "part": "test",
+      "count": 255,
+      "file_sum": 5668011,
+      "expected_count": 255,
+      "expected_sum": 5668011,
+      "matches_expected": true
+    },
+    {
+      "label": "street",
+      "part": "train",
+      "count": 200,
+      "file_sum": 1841817,
+      "expected_count": 200,
+      "expected_sum": 1841817,
+      "matches_expected": true
+    },
+    {
+      "label": "street",
+      "part": "validation",
+      "count": 250,
+      "file_sum": 5541845,
+      "expected_count": 250,
+      "expected_sum": 5541845,
+      "matches_expected": true
+    },
+    {
+      "label": "street",
+      "part": "test",
+      "count": 251,
+      "file_sum": 5547533,
+      "expected_count": 251,
+      "expected_sum": 5547533,
+      "matches_expected": true
+    }
+  ],
+  "initial_loss": [
+    {
+      "regime": "scratch",
+      "seed": 1,
+      "loss": 2.047884464263916,
+      "ln6": 1.791759469228055,
+      "difference": 0.25612499503586106
+    },
+    {
+      "regime": "frozen",
+      "seed": 1,
+      "loss": 1.9243943691253662,
+      "ln6": 1.791759469228055,
+      "difference": 0.13263489989731125
+    }
+  ],
+  "parameters": [
+    {
+      "regime": "scratch",
+      "total": 11179590,
+      "trainable": 11179590,
+      "groups": [
+        [
+          11179590,
+          0.003
+        ]
+      ]
+    },
+    {
+      "regime": "frozen",
+      "total": 11179590,
+      "trainable": 3078,
+      "groups": [
+        [
+          3078,
+          0.003
+        ]
+      ]
+    },
+    {
+      "regime": "unfreeze",
+      "total": 11179590,
+      "trainable": 8396806,
+      "groups": [
+        [
+          3078,
+          0.003
+        ],
+        [
+          8393728,
+          0.0003
+        ]
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "regime": "frozen",
+      "module": "conv1",
+      "parameters_changed": 0,
+      "bn_changed": null,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "bn1",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "layer1",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "layer2",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "layer3",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "layer4",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "frozen",
+      "module": "fc",
+      "parameters_changed": 1,
+      "bn_changed": null,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "conv1",
+      "parameters_changed": 0,
+      "bn_changed": null,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "bn1",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "layer1",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "layer2",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "layer3",
+      "parameters_changed": 0,
+      "bn_changed": 0,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "layer4",
+      "parameters_changed": 1,
+      "bn_changed": 1,
+      "matches_expected": true
+    },
+    {
+      "regime": "unfreeze",
+      "module": "fc",
+      "parameters_changed": 1,
+      "bn_changed": null,
+      "matches_expected": true
+    }
+  ],
+  "bn_prediction": "нові статистики порахуються за новими даними і train loss нічого не покаже, бо все одно буде навчатися голова і loss спадатиме",
+  "bn_mistake": {
+    "modules": [
+      {
+        "regime": "frozen",
+        "module": "conv1",
+        "parameters_changed": 0,
+        "bn_changed": null,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "bn1",
+        "parameters_changed": 0,
+        "bn_changed": 1,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "layer1",
+        "parameters_changed": 0,
+        "bn_changed": 1,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "layer2",
+        "parameters_changed": 0,
+        "bn_changed": 1,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "layer3",
+        "parameters_changed": 0,
+        "bn_changed": 1,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "layer4",
+        "parameters_changed": 0,
+        "bn_changed": 1,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      },
+      {
+        "regime": "frozen",
+        "module": "fc",
+        "parameters_changed": 1,
+        "bn_changed": null,
+        "mean_change": 0.09283638000488281,
+        "var_change": 0.12031435966491699
+      }
+    ],
+    "train_loss_first_5_batches": [
+      1.8869601488113403,
+      1.9456455707550049,
+      1.8442442417144775,
+      1.6837120056152344,
+      1.4074041843414307
+    ],
+    "running_mean_max_change": 0.09283638000488281,
+    "running_var_max_change": 0.12031435966491699
+  }
+}

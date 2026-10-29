@@ -1,0 +1,11 @@
+# Локальний набір зображень не входить до здачі.
+/seg_train/
+/seg_test/
+/seg_pred/
+
+# У репозиторії зберігаємо лише фінальну lab3_model.pt.
+/runs/*/checkpoint.pt
+
+# Окремі повтори та використаний допоміжний патч.
+/reproduction*/
+/lab3_fixes.patch

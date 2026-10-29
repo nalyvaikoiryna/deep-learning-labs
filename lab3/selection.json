@@ -1,0 +1,8 @@
+{
+  "regime": "unfreeze",
+  "seed": 3,
+  "val_macro_f1": 0.9006523304289259,
+  "split_sha256": "148dad92de9a18670c177df9f8757aa6519fb0ea6d74a8ba723cfc4453f0a1bc",
+  "checkpoint_sha256": "69a9ccfd37858d781041441eb6e2f8392db4728f4673a7c4d1aec6a9c5565592",
+  "epoch": 8
+}

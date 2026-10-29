@@ -1,0 +1,209 @@
+{
+  "split_sha256": "148dad92de9a18670c177df9f8757aa6519fb0ea6d74a8ba723cfc4453f0a1bc",
+  "model_sha256": "69a9ccfd37858d781041441eb6e2f8392db4728f4673a7c4d1aec6a9c5565592",
+  "runtime": {
+    "python": "3.12.2",
+    "torch": "2.14.1",
+    "device": "cpu"
+  },
+  "runs": [
+    {
+      "regime": "scratch",
+      "seed": 1,
+      "train_loss": 1.0073920981089275,
+      "val_macro_f1": 0.5618981596962437,
+      "training_seconds": 198.65167570995982
+    },
+    {
+      "regime": "frozen",
+      "seed": 1,
+      "train_loss": 0.16545249501864115,
+      "val_macro_f1": 0.8842012435043274,
+      "training_seconds": 95.56334129199968
+    },
+    {
+      "regime": "frozen",
+      "seed": 2,
+      "train_loss": 0.1756555011868477,
+      "val_macro_f1": 0.8785003294351141,
+      "training_seconds": 96.77340645901859
+    },
+    {
+      "regime": "frozen",
+      "seed": 3,
+      "train_loss": 0.18958317418893178,
+      "val_macro_f1": 0.8885955696095422,
+      "training_seconds": 95.87394900099025
+    },
+    {
+      "regime": "unfreeze",
+      "seed": 1,
+      "train_loss": 0.08075946644569437,
+      "val_macro_f1": 0.8843124569636581,
+      "training_seconds": 112.12304104302893
+    },
+    {
+      "regime": "unfreeze",
+      "seed": 2,
+      "train_loss": 0.09517102083191276,
+      "val_macro_f1": 0.8809182960697406,
+      "training_seconds": 112.23396058406797
+    },
+    {
+      "regime": "unfreeze",
+      "seed": 3,
+      "train_loss": 0.08158867621173461,
+      "val_macro_f1": 0.9006523304289259,
+      "training_seconds": 112.35892037395388
+    }
+  ],
+  "statistics": [
+    {
+      "regime": "scratch",
+      "mean_f1": 0.5618981596962437,
+      "min_f1": 0.5618981596962437,
+      "max_f1": 0.5618981596962437,
+      "range_f1": null
+    },
+    {
+      "regime": "frozen",
+      "mean_f1": 0.8837657141829945,
+      "min_f1": 0.8785003294351141,
+      "max_f1": 0.8885955696095422,
+      "range_f1": 0.010095240174428088
+    },
+    {
+      "regime": "unfreeze",
+      "mean_f1": 0.8886276944874415,
+      "min_f1": 0.8809182960697406,
+      "max_f1": 0.9006523304289259,
+      "range_f1": 0.019734034359185304
+    }
+  ],
+  "effects": {
+    "delta_pre": 0.32186755448675086,
+    "delta_unf": 0.004861980304446956,
+    "delta_pre_pp": 32.186755448675086,
+    "delta_unf_pp": 0.48619803044469556,
+    "winner": "unfreeze",
+    "max_range": 0.019734034359185304,
+    "effect_larger": false,
+    "pre_effect_larger": true,
+    "total_gain": 0.3267295347911978
+  },
+  "selected": {
+    "regime": "unfreeze",
+    "seed": 3,
+    "val_macro_f1": 0.9006523304289259
+  },
+  "test": {
+    "macro_f1": 0.8879313533119438,
+    "accuracy": 0.8854860186418109,
+    "num_images": 1502,
+    "accuracy_standard_error": 0.008216467560265691,
+    "test_minus_validation_f1": -0.012720977116982057,
+    "device": "cpu"
+  },
+  "confusion_matrix": [
+    [
+      195,
+      0,
+      1,
+      1,
+      2,
+      20
+    ],
+    [
+      0,
+      233,
+      1,
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      0,
+      195,
+      72,
+      9,
+      0
+    ],
+    [
+      1,
+      0,
+      19,
+      238,
+      5,
+      0
+    ],
+    [
+      3,
+      0,
+      5,
+      6,
+      241,
+      0
+    ],
+    [
+      22,
+      0,
+      0,
+      0,
+      1,
+      228
+    ]
+  ],
+  "errors": [
+    {
+      "index": 713,
+      "true": 2,
+      "pred": 3,
+      "frequency": 72,
+      "file": "20179.jpg",
+      "true_class": "glacier",
+      "pred_class": "mountain",
+      "probability": 0.8570138812065125
+    },
+    {
+      "index": 1486,
+      "true": 5,
+      "pred": 0,
+      "frequency": 22,
+      "file": "20454.jpg",
+      "true_class": "street",
+      "pred_class": "buildings",
+      "probability": 0.7636390924453735
+    },
+    {
+      "index": 130,
+      "true": 0,
+      "pred": 5,
+      "frequency": 20,
+      "file": "20246.jpg",
+      "true_class": "buildings",
+      "pred_class": "street",
+      "probability": 0.9999383687973022
+    },
+    {
+      "index": 783,
+      "true": 3,
+      "pred": 2,
+      "frequency": 19,
+      "file": "20320.jpg",
+      "true_class": "mountain",
+      "pred_class": "glacier",
+      "probability": 0.9320258498191833
+    },
+    {
+      "index": 524,
+      "true": 2,
+      "pred": 4,
+      "frequency": 9,
+      "file": "20383.jpg",
+      "true_class": "glacier",
+      "pred_class": "sea",
+      "probability": 0.7886878848075867
+    }
+  ]
+}
